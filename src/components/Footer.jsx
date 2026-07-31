@@ -8,15 +8,7 @@ const socialLinks = [
 const footerLinks = [
   {
     heading: 'Product',
-    links: ['Features', 'Gallery', 'Specifications', 'Pricing'],
-  },
-  {
-    heading: 'Company',
-    links: ['About', 'Blog', 'Careers', 'Press'],
-  },
-  {
-    heading: 'Support',
-    links: ['Help Center', 'Contact Us', 'Warranty', 'Returns'],
+    links: ['Gallery', 'Specifications', 'Contact Us'],
   },
 ]
 
@@ -37,7 +29,7 @@ export default function Footer() {
       <div className="section-wrapper" style={{ padding: '4rem 1.5rem 2.5rem' }}>
         <div style={{
           display: 'grid',
-          gridTemplateColumns: '2fr 1fr 1fr 1fr',
+          gridTemplateColumns: '2fr 1fr',
           gap: '3rem',
           marginBottom: '3rem',
         }}
@@ -56,7 +48,7 @@ export default function Footer() {
                 ⬡
               </div>
               <span style={{ fontWeight: 800, fontSize: '1.2rem', color: '#f0f0ff' }}>
-                Nex<span style={{ color: '#a855f7' }}>Aura</span>
+                NFC <span style={{ color: '#a855f7' }}>Sculpture</span>
               </span>
             </a>
             <p style={{
@@ -123,49 +115,6 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Newsletter strip */}
-        <div style={{
-          padding: '1.75rem 2rem',
-          borderRadius: '1.25rem',
-          background: 'rgba(255,255,255,0.03)',
-          border: '1px solid rgba(255,255,255,0.07)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
-          gap: '1rem',
-          marginBottom: '2.5rem',
-        }}>
-          <div>
-            <div style={{ fontWeight: 700, color: '#f0f0ff', marginBottom: '0.25rem' }}>
-              Stay in the loop
-            </div>
-            <div style={{ color: '#8888aa', fontSize: '0.87rem' }}>
-              Product updates, early access, and exclusive offers.
-            </div>
-          </div>
-          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-            <input
-              type="email"
-              placeholder="your@email.com"
-              style={{
-                background: 'rgba(255,255,255,0.06)',
-                border: '1px solid rgba(255,255,255,0.12)',
-                borderRadius: '9999px',
-                padding: '0.65rem 1.25rem',
-                color: '#f0f0ff',
-                fontSize: '0.9rem',
-                outline: 'none',
-                width: '240px',
-                fontFamily: 'inherit',
-              }}
-              aria-label="Email address for newsletter"
-            />
-            <button className="btn-glow" style={{ padding: '0.65rem 1.5rem', fontSize: '0.9rem' }}>
-              Subscribe
-            </button>
-          </div>
-        </div>
 
         {/* Bottom bar */}
         <div style={{
@@ -178,7 +127,7 @@ export default function Footer() {
           borderTop: '1px solid rgba(255,255,255,0.06)',
         }}>
           <p style={{ color: '#55557a', fontSize: '0.85rem', margin: 0 }}>
-            © {new Date().getFullYear()} NexAura Technologies, Inc. All rights reserved.
+            © {new Date().getFullYear()} NFC Sculpture. All rights reserved.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem' }}>
             {['Privacy Policy', 'Terms of Service', 'Cookies'].map(l => (
@@ -202,12 +151,7 @@ export default function Footer() {
       </div>
 
       <style>{`
-        @media (max-width: 900px) {
-          .footer-grid {
-            grid-template-columns: 1fr 1fr !important;
-          }
-        }
-        @media (max-width: 540px) {
+        @media (max-width: 640px) {
           .footer-grid {
             grid-template-columns: 1fr !important;
           }

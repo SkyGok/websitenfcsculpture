@@ -11,10 +11,9 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { label: 'Features', href: '#features' },
     { label: 'Gallery', href: '#gallery' },
     { label: 'Reviews', href: '#reviews' },
-    { label: 'Contact', href: '#footer' },
+    { label: 'Contact Us', href: '#footer' },
   ]
 
   return (
@@ -37,7 +36,7 @@ export default function Navbar() {
               ⬡
             </div>
             <span style={{ fontWeight: 800, fontSize: '1.2rem', color: '#f0f0ff', letterSpacing: '-0.02em' }}>
-              Nex<span style={{ color: '#a855f7' }}>Aura</span>
+              NFC <span style={{ color: '#a855f7' }}>Sculpture</span>
             </span>
           </a>
 
