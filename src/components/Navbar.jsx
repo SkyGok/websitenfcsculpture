@@ -14,6 +14,7 @@ export default function Navbar() {
     { label: 'Nasıl Çalışır?', href: '#nasil-calisir' },
     { label: 'Galeri', href: '#gallery' },
     { label: 'Fark', href: '#karsilastirma' },
+    { label: 'Yorumlar', href: '#yorumlar' },
     { label: 'SSS', href: '#sss' },
     { label: 'İletişim', href: '#footer' },
   ]
