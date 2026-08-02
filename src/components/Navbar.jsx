@@ -11,9 +11,11 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { label: 'Gallery', href: '#gallery' },
-    { label: 'Reviews', href: '#reviews' },
-    { label: 'Contact Us', href: '#footer' },
+    { label: 'Nasıl Çalışır?', href: '#nasil-calisir' },
+    { label: 'Galeri', href: '#gallery' },
+    { label: 'Fark', href: '#karsilastirma' },
+    { label: 'SSS', href: '#sss' },
+    { label: 'İletişim', href: '#footer' },
   ]
 
   return (
@@ -60,7 +62,7 @@ export default function Navbar() {
               </a>
             ))}
             <a href="#" className="btn-glow" style={{ padding: '0.6rem 1.5rem', fontSize: '0.9rem' }}>
-              Buy Now
+              Sipariş Ver
             </a>
           </div>
 
@@ -100,7 +102,7 @@ export default function Navbar() {
               </a>
             ))}
             <a href="#" className="btn-glow" style={{ alignSelf: 'flex-start', padding: '0.7rem 1.75rem' }}>
-              Buy Now
+              Sipariş Ver
             </a>
           </div>
         )}

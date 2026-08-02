@@ -41,38 +41,37 @@ export default function Hero() {
           {/* Left — Text Content */}
           <div>
             <div className="section-label animate-slide-up">
-              ✦ Next-Gen Wearable
+              ✦ NFC Heykel Teknolojisi
             </div>
 
             <h1
               className="animate-slide-up-delay"
               style={{
-                fontSize: 'clamp(2.6rem, 5vw, 4.2rem)',
+                fontSize: 'clamp(2rem, 4.2vw, 3.4rem)',
                 fontWeight: 900,
-                lineHeight: 1.05,
+                lineHeight: 1.12,
                 letterSpacing: '-0.03em',
                 margin: '0 0 1.5rem',
                 color: '#f0f0ff',
               }}
             >
-              Experience the{' '}
-              <span className="gradient-text">Future</span>{' '}
-              on Your Wrist
+              Müşterileriniz tek{' '}
+              <span className="gradient-text">dokunuşla</span>{' '}
+              Google değerlendirmesi bıraksın.
             </h1>
 
             <p
               className="animate-slide-up-delay-2"
               style={{
-                fontSize: '1.15rem',
-                lineHeight: 1.7,
+                fontSize: '1.1rem',
+                lineHeight: 1.75,
                 color: '#8888aa',
                 margin: '0 0 2.5rem',
                 maxWidth: '480px',
               }}
             >
-              NexAura redefines smart wearables with an ultra-thin design,
-              AI-powered health insights, and 14-day battery life — wrapped
-              in aerospace-grade titanium.
+              Mekanınıza özel tasarlanmış NFC biblolar ile hem dekorunuzu
+              güçlendirin hem de Google yorumlarınızı artırın.
             </p>
 
             <div
@@ -80,27 +79,23 @@ export default function Hero() {
               style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '3rem' }}
             >
               <a href="#" className="btn-glow">
-                <span>Buy Now</span>
+                <span>Hemen Sipariş Ver</span>
                 <span style={{ fontSize: '1.1rem' }}>→</span>
               </a>
-              <a href="#features" className="btn-outline">
-                Explore Features
+              <a href="#nasil-calisir" className="btn-outline">
+                Nasıl Çalışır?
               </a>
             </div>
 
             {/* Stats */}
             <div
               className="animate-fade"
-              style={{
-                display: 'flex',
-                gap: '2rem',
-                flexWrap: 'wrap',
-              }}
+              style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}
             >
               {[
-                { value: '50K+', label: 'Happy Customers' },
-                { value: '4.9★', label: 'Avg. Rating' },
-                { value: '14d', label: 'Battery Life' },
+                { value: '500+', label: 'Mutlu İşletme' },
+                { value: '4.9★', label: 'Ortalama Puan' },
+                { value: '%300', label: 'Daha Fazla Yorum' },
               ].map((stat, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: i > 0 ? '2rem' : 0 }}>
                   {i > 0 && <div className="stat-divider" style={{ height: '36px' }} />}
@@ -144,12 +139,12 @@ export default function Hero() {
                 boxShadow: '0 4px 20px rgba(124,58,237,0.5)',
                 letterSpacing: '0.03em',
               }}>
-                NEW 2025
+                YENİ 2025
               </div>
 
               <img
                 src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80"
-                alt="NexAura Premium Smart Watch hero product shot"
+                alt="NFC Sculpture ürün görseli"
                 style={{
                   width: '100%',
                   height: '100%',
@@ -182,10 +177,10 @@ export default function Hero() {
                 display: 'flex', alignItems: 'center', gap: '0.65rem',
                 boxShadow: '0 8px 24px rgba(0,0,0,0.4)',
               }}>
-                <span style={{ fontSize: '1.3rem' }}>❤️</span>
+                <span style={{ fontSize: '1.3rem' }}>📱</span>
                 <div>
-                  <div style={{ fontSize: '0.7rem', color: '#8888aa', fontWeight: 500 }}>Heart Rate</div>
-                  <div style={{ fontSize: '1rem', fontWeight: 700, color: '#f0f0ff' }}>72 BPM</div>
+                  <div style={{ fontSize: '0.7rem', color: '#8888aa', fontWeight: 500 }}>Tek Dokunuş</div>
+                  <div style={{ fontSize: '1rem', fontWeight: 700, color: '#f0f0ff' }}>Anında Yorum</div>
                 </div>
               </div>
 
@@ -200,10 +195,10 @@ export default function Hero() {
                 display: 'flex', alignItems: 'center', gap: '0.65rem',
                 boxShadow: '0 8px 24px rgba(0,0,0,0.4)',
               }}>
-                <span style={{ fontSize: '1.2rem' }}>🔋</span>
+                <span style={{ fontSize: '1.2rem' }}>⭐</span>
                 <div>
-                  <div style={{ fontSize: '0.7rem', color: '#8888aa', fontWeight: 500 }}>Battery</div>
-                  <div style={{ fontSize: '1rem', fontWeight: 700, color: '#22d3ee' }}>98%</div>
+                  <div style={{ fontSize: '0.7rem', color: '#8888aa', fontWeight: 500 }}>Google</div>
+                  <div style={{ fontSize: '1rem', fontWeight: 700, color: '#f59e0b' }}>★★★★★</div>
                 </div>
               </div>
             </div>
@@ -218,7 +213,7 @@ export default function Hero() {
         color: '#8888aa', fontSize: '0.75rem', fontWeight: 500, zIndex: 2,
         animation: 'float-orb 2s ease-in-out infinite',
       }}>
-        <span>Scroll</span>
+        <span>Aşağı Kaydır</span>
         <div style={{
           width: '1.5px', height: '40px',
           background: 'linear-gradient(to bottom, #8888aa, transparent)',
