@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/websitenfcsculpture/',
+  base: '/', // ← use '/' since you'll have a custom domain
   plugins: [react(), tailwindcss()],
 })
